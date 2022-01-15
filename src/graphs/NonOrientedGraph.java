@@ -95,9 +95,9 @@ public class NonOrientedGraph {
         System.out.print(vertex + " ");
 
         // On part en recurrence sur les vertices voisins de notre currentVertex
-        Iterator<Integer> i = adjacencyList[vertex].listIterator();
-        while (i.hasNext()) {
-            int n = i.next();
+        Iterator<Integer> neighbor = adjacencyList[vertex].listIterator();
+        while (neighbor.hasNext()) {
+            int n = neighbor.next();
             if (!visited[n]) {
                 DFSRecursion(n, visited);
             }
