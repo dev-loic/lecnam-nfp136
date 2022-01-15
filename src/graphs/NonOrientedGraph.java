@@ -59,9 +59,6 @@ public class NonOrientedGraph {
             currentVertex = queue.poll();
             System.out.print(currentVertex + " ");
 
-            // Get all adjacent vertices of the dequeued vertex s
-            // If a adjacent has not been visited, then mark it
-            // visited and enqueue it
             // On recupere l'ensemble des voisins de notre élément courant et on les parcourt, s'ils ne l'ont pas déjà été
             // 1- On les marque comme visité
             // 2- On les ajoute à la queue pour parcourir leurs voisins
@@ -93,7 +90,6 @@ public class NonOrientedGraph {
     }
 
     private void DFSRecursion(int vertex, boolean [] visited) {
-        // Mark the current node as visited and print it
         // On marque le current vertex comme visité et on l'affiche
         visited[vertex] = true;
         System.out.print(vertex + " ");
